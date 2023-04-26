@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    tools:context="com.motoacademy.camera.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5sp"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:layout_gravity="end"
+            android:background="#674FD9"
+            android:layout_marginRight="10sp"
+            android:backgroundTint="#674FD9"
+            android:textColor="@color/white"
+            android:id="@+id/refreshimgbtn"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="end"
+        android:background="#FF5353"
+        android:backgroundTint="#FF5353"
+       android:layout_marginRight="30sp"
+        android:textColor="@color/white"
+        android:id="@+id/saveimgbtn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mainimg"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:src="@drawable/g2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:id="@+id/floatingbtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="-45dp"
+            android:layout_width="100dp"/>
+    </LinearLayout>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/f1"
+                android:src="@drawable/g2" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/f2"
+                android:src="@drawable/g2" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                android:id="@+id/f3"
+                android:src="@drawable/g2" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/f4"
+                android:layout_margin="8dp"
+                android:src="@drawable/g2" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>
